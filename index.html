@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Muhammed Sinan P</title>
+  </head>
+  <body>
+    <section id="nav-section">
+      <div class="container-lg">
+        <header class="d-flex justify-content-between py-2 mb-10">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <span class="fs-4 text title text-primary">Web Developer</span>
+          </a>
+
+          <ul class="nav nav-pills d-none d-sm-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link home text-uppercase">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio-section" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="dropdown d-sm-none">
+            <button
+              class="btn btn-primary"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <ion-icon name="menu"></ion-icon>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">HOME</a></li>
+              <li><a class="dropdown-item" href="#about-section">About</a></li>
+              <li>
+                <a class="dropdown-item" href="#portfolio-section">Portfolio</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section id="hero-section" class="border-bottom">
+      <div class="container-xl pt-4 mt-4">
+        <div
+          class="row flex-row-reverse align-items-md-end align-items-center justify-content-center py-0"
+        >
+          <div
+            class="col-md-4 col-12 order-2 order-md-1 d-flex justify-content-center"
+          >
+            <img
+              src="./images/me-removebg-preview.png"
+              class="d-block img-fluid profile-pic"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="col-md-8 col-12 order-1 order-md-2">
+            <h1
+              class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center text-md-start"
+            >
+              Hi,I am<br /><span class="text-primary">Muhammed Sinan P</span>
+            </h1>
+            <p class="">
+              <em>
+                I am a passionate and dedicated web developer with a strong
+                foundation in both front-end and back-end technologies. I build
+                seamless, functional interfaces that provide an exceptional user
+                experience.<br /><br /><span class="d-none d-md-block"
+                  >I take pride in writing clean, efficient code and
+                  continuously strive to stay updated with the latest industry
+                  trends and best practices. My goal is to deliver high-quality
+                  digital solutions that not only meet but exceed client
+                  expectations.
+                </span></em
+              >
+            </p>
+            <div class="d-grid gap-2 d-flex justify-content-md-start">
+              <a href="#about-section"
+                ><button
+                  type="button"
+                  class="btn btn-info px-2 py-0 text-light mb-3"
+                >
+                  About Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-section" class="my-2 py-2 border-bottom">
+      <div class="container-xl text-center">
+        <h2 class="text-primary mb-2"><strong>My Projects</strong></h2>
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-sm filter-btn clicked"
+          data-filter="all"
+          onclick="filter()"
+        >
+          All
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-sm filter-btn"
+          data-filter="design"
+          onclick="filter()"
+        >
+          Design
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-sm filter-btn"
+          data-filter="development"
+          onclick="filter()"
+        >
+          Development
+        </button>
+      </div>
+      <div class="container">
+        <div class="row justify-content-evenly">
+          <div class="card col-3 mt-4" data-category="development">
+            <img
+              class="card-img-top card-image"
+              src="./images/password.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Password Generator</h5>
+              <p class="card-text">
+                Simple website to create random password. Length and characters
+                can be customized.
+              </p>
+              <a
+                href="https://github.com/Muhammed-SinanP/RandomPasswordGenerator.git"
+                class="btn btn-sm btn-dark"
+                >Github</a
+              >
+              <a
+                href="https://muhammed-sinanp.github.io/RandomPasswordGenerator/"
+                class="btn btn-sm btn-outline-dark"
+                >Visit site</a
+              >
+            </div>
+          </div>
+
+          <div class="card col-3 mt-4" data-category="development">
+            <img
+              class="card-img-top card-image"
+              src="./images/bmi.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">BMI Calculator</h5>
+              <p class="card-text">
+                Simple website to know your body mass index.Also show the status
+                of weight.
+              </p>
+              <a
+                href="https://github.com/Muhammed-SinanP/BMI-Calculator.git"
+                class="btn btn-sm btn-dark"
+                >Github</a
+              >
+              <a
+                href="https://muhammed-sinanp.github.io/BMI-Calculator/"
+                class="btn btn-sm btn-outline-dark"
+                >Visit site</a
+              >
+            </div>
+          </div>
+
+          <div class="card col-3 mt-4" data-category="design">
+            <img
+              class="card-img-top"
+              src="./images/kitty.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kitty Match</h5>
+              <p class="card-text">
+                Simple website for cats to date.No functionality included only
+                designing is done. Used bootstrap for styling.
+              </p>
+              <a
+                href="https://github.com/Muhammed-SinanP/Bootstrap-Module.git"
+                class="btn btn-sm btn-dark"
+                >Github</a
+              >
+              <a
+                href="https://muhammed-sinanp.github.io/Bootstrap-Module/"
+                class="btn btn-sm btn-outline-dark"
+                >Visit site</a
+              >
+            </div>
+          </div>
+
+          <div class="card col-3 mt-4" data-category="design">
+            <img
+              class="card-img-top"
+              src="./images/messi.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Messi Store Clone</h5>
+              <p class="card-text">
+                Simple static website recreating the design of Messi Store. Non
+                functional. Non responsive.
+              </p>
+              <a
+                href="https://github.com/Muhammed-SinanP/Messi-Store-Clone-Static-.git"
+                class="btn btn-sm btn-dark"
+                >Github</a
+              >
+              <a
+                href="https://muhammed-sinanp.github.io/Messi-Store-Clone-Static-/"
+                class="btn btn-sm btn-outline-dark"
+                >Visit site</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-section" class="border-bottom my-2 py-2">
+      <div class="container-xl text-center fw-semibold">
+        <h2 class="text-primary mb-2"><strong>About Me</strong></h2>
+        <img src="./images/profile.jpg" alt="profile image" class="profile" />
+        <div class="container my-2">
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end">Name:</div>
+            <div class="col-6 p-0">Muhammed Sinan P</div>
+          </div>
+
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end">DOB:</div>
+            <div class="col-6 p-0">January 09, 2002</div>
+          </div>
+
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end">Place:</div>
+            <div class="col-6 p-0">Wayanad,Kerala</div>
+          </div>
+        </div>
+
+        <div class="container mb-2">
+          <p class="fw-bolder m-0 text-primary">Skills & Expertise:</p>
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end fw-bold">Front-end:</div>
+            <div class="col-6 p-0">
+              HTML, CSS, JavaScript, React, Bootstrap, Tailwind
+            </div>
+          </div>
+
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end fw-bold">Back-end:</div>
+            <div class="col-6 p-0">Node.js, Express, Python, Django</div>
+          </div>
+
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end fw-bold">Database:</div>
+            <div class="col-6 p-0">MongoDB</div>
+          </div>
+
+          <div class="row justify-content-center text-start">
+            <div class="col-6 text-end fw-bold">Tools & Platforms:</div>
+            <div class="col-6 p-0 align-self-end">Git, GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="my-4">
+      <div class="container">
+        <h2 class="text-primary mb-2 text-center">
+          <strong>Contact Me</strong>
+        </h2>
+        <form class="fw-medium" onsubmit="sendMessage()">
+          <div class="mb-3">
+            <label for="userName" class="form-label">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="userEmail" class="form-label">Email address:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="userName"
+              placeholder="youremail@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Message:</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-success px-4 btn-sm btn-block">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="feedback-section" class="text-center text-success">
+      <div class="container">
+        <h5>
+          Message sent successfully!<br />Will get back to you soon through the
+          email you provided
+        </h5>
+
+        <button
+          class="btn btn-outline-success my-4 btn-sm"
+          onclick="sendMessageAgain()"
+        >
+          Send again
+        </button>
+      </div>
+    </section>
+
+    <section id="footer-section" class="pb-2 pt-4 text-center">
+      <footer id="date">&copy;&nbsp;</footer>
+    </section>
+
+    <script src="./index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

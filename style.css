@@ -1,0 +1,71 @@
+body{
+	background: linear-gradient(45deg,white,rgb(107, 222, 253),white, #5bc0ff, white);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.nav-item:hover {
+  border-bottom: 1px solid white;
+  
+}
+.nav-item:hover .nav-link{
+  color: white;
+}
+.title,
+.home {
+  font-weight: bolder;
+}
+#nav-section {
+  background-color: rgb(95, 210, 255);
+  box-shadow: 0px 1px 10px 0px black;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.profile-pic {
+  width: 300px;
+}
+.card{
+    width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card-img-top{
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+
+}
+.profile{
+    height: 100px;
+    border: 2px solid rgb(71, 224, 255);;
+    background-position: center;
+    object-fit: contain;
+    background-color: black;
+
+}
+#footer-section{
+    background-color:  rgb(95, 210, 255);
+    color: white;
+}
+
+.form-control:hover{
+cursor: pointer;
+}
+
+.clicked{
+  background-color: blue;
+  color: white;
+}
