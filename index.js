@@ -30,7 +30,8 @@ buttons.forEach((button) => {
   });
 });
 
-function sendMessage() {
+function sendMessage(event) {
+    event.preventDefault();
   contactDiv.style.display = "none";
 
   feedbackDiv.style.display = "block";
